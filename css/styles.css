@@ -1,0 +1,270 @@
+body{
+    background-color: #fcfcfc;
+    margin:0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+img{
+    display:block;
+    width: 100%;
+    height: auto;
+    margin: auto;
+    padding: 10px 0;
+}
+
+a{
+    transition: all 0.3s ease-in-out;
+    color: inherit;
+}
+a:hover{
+    color: #49db36;
+    text-decoration: none;
+    cursor: pointer;
+}
+h1{
+    font-weight: 700;
+    line-height: 2.5rem;
+}
+h2{
+    font-weight: 500;
+    font-size: 1.7rem;
+    line-height: 1.7rem;
+}
+h4{
+    margin:0;
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+h6{
+    position:relative;
+    margin-top: auto;
+}
+.thin{
+    font-weight: 300;
+    font-size: 0.7rem;
+}
+nav{
+    z-index: 3!important;
+}
+header{
+    z-index: 2!important;
+}
+.margin-top{
+    padding-top: 20px;
+    margin-top: 56px;
+}
+.margin-top,.navbar-expand-lg:first-of-type{
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,.1)
+}
+header{
+    background-color: #f8f9fa;
+}
+header h1{
+    padding-left: 16px;
+    
+}
+.underscore{
+    content: '';
+    position: relative;
+    top: -25px;
+    left: 10px;
+    z-index: -1;
+    width: 120px;
+    height:16px;
+    background-image: linear-gradient(90deg,#49db36, #94ecd2);
+}
+.breadcrumb i{
+    margin: auto 2px;
+}
+
+/* main */
+main{
+    padding-top: 220px;
+    padding-bottom: 20px;
+}
+.quote-container{
+    width: 80%;
+    margin:auto;
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+    font-weight: 500;
+}
+.quote-container i{
+    font-size: 2em;
+    color:#49db36;
+    display: inline-block;
+    position: relative;
+    top: -30px;
+    left: -10px;
+}
+.quote{
+    display: inline-block;
+    width: 90%;
+    padding-top: 50px;
+}
+.author{
+    position: relative;
+    left: 60%;
+}
+.sources p{
+    display: inline-block;
+    font-weight: 500;
+}
+/* comments */
+.comments-header{
+    background-color: #e9ecef;
+    border-radius: 10px;
+    padding: 20px;
+}
+textarea{
+    width: 100%;
+    height: 100px;
+}
+.comments-header button{
+    margin: 10% auto 0 auto;
+}
+.comments-main{
+    width: 100%;
+}
+h6, .date{
+    display: inline-block
+}
+.date{
+    font-weight: 300;
+    color: rgb(180, 180, 180);
+    padding-left: 10px;
+    font-size: 0.8rem;
+}
+.comment{
+    padding: 20px 0;
+    border-bottom: 1px #ccc solid;
+}
+.comment:last-of-type{
+    border-bottom: none;
+}
+.reactions div{
+    display: inline-block;
+    padding: 10px;
+}
+.likes:hover{
+    cursor: pointer;
+    color:#49db36;
+}
+.dislikes:hover{
+    cursor: pointer;
+    color: #dc3545;
+}
+.like-active{
+    color:#49db36;
+}
+.dislike-active{
+    color: #dc3545;
+}
+
+/* facebook + comments */
+.actions-container{
+    position: fixed;
+    left: 10px;
+    top: 35%;
+    width: 60px;
+    color: #fff;
+}
+.circle{
+    width: 50px;
+    height: 50px;
+    background-color: #3b5998;
+    border-radius: 100%;
+    text-align: center;
+    font-size: 1.3rem;
+    margin-bottom: 20px;
+}
+.circle:nth-of-type(2){
+    background-color: rgb(133, 133, 133);
+}
+.circle i{
+    margin-top: 15px;
+}
+.circle:hover{
+    background-color: #000;
+}
+.circle:hover a{
+    color: #49db36;
+}
+@media only screen and (max-width: 576px) {
+    .actions-container {
+      left: initial;
+      right: 10px;
+    }
+  }
+/* sidebar */
+.sidebar{
+    position: relative;
+    top: 15%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+}
+.sidebar h4{
+    text-align: center;
+    font-size: 2rem;
+    display: block;
+    padding: 10px
+}
+.sidebar h4:hover{
+    cursor: pointer;
+    color:#ccc;
+}
+.choice{
+    overflow-x: hidden;
+}
+.sidebar .row{
+    max-width: 100%;
+    margin: auto;
+    padding: 10px 0;
+    border-bottom: 1px solid #ccc;
+}
+.sidebar .row:first-of-type{
+    border-top: 1px solid #ccc;
+}
+.sidebar .row:last-of-type{
+    border-bottom: none;
+}
+.newest,.popular{
+    display: none;
+}
+.active{
+    display: block;
+}
+.active-title{
+    color: #49db36;
+    border-bottom: #49db36 3px solid;
+}
+@media only screen and (max-width: 576px) {
+    .sidebar {
+      top: 0;
+    }
+  }
+/* footer */
+footer{
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+    font-size: 0.8em;
+    font-weight: 300;
+}
+.upper-footer{
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    padding: 50px 0;
+}
+footer .links{
+    width: 60%;
+    margin: auto;
+}
+.upper-footer a{
+    padding: 30px 10px;
+}
+.lower-footer{
+    padding: 50px 0;
+    color: #ccc;
+}
